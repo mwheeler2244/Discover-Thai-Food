@@ -1,0 +1,351 @@
+:root {
+  --bg-primary-color: hsl(218.18, 37.29%, 23.14%);
+  --text-accent-color: hsl(240, 9%, 25%);
+  --buttonColor: #d4af37;
+  --margin-block: 5rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+h1 {
+  font-size: clamp(1rem, 1.3636rem + 4.8485vw, 3.75rem);
+  font-weight: 600;
+  color: var(--bg-primary-color);
+  text-align: center;
+  font-family: "Caveat", sans-serif;
+  line-height: 1.2;
+}
+h2 {
+  font-size: clamp(1rem, 1.3636rem + 4.8485vw, 2.5rem);
+  text-align: center;
+  background-color: var(--bg-primary-color);
+  padding: 3rem;
+  color: white;
+}
+h3 {
+  font-size: clamp(1rem, 1.25rem + 4.8485vw, 2rem);
+  color: var(--bg-primary-color);
+}
+
+p {
+  font-weight: 300;
+  color: var(--text-accent-color);
+  font-size: clamp(1rem, 1.25rem + 4.8485vw, 1.25rem);
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-size: clamp(1.25rem, 1.25rem + 4.8485vw, 1.5rem);
+}
+span {
+  margin-right: 0.5rem;
+}
+h1 span {
+  color: var(--buttonColor);
+  font-size: 6rem;
+}
+main {
+  overflow-x: hidden;
+}
+
+.wrapper {
+  width: min(1200px, 100% - 1.5rem);
+  margin-inline: auto;
+}
+.wrapper:not(:nth-child(1)) {
+  padding-top: 4rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-color: var(--bg-primary-color);
+  padding: 2rem 6rem;
+}
+
+.nav__links {
+  display: flex;
+  gap: 3.25rem;
+  list-style: none;
+  transition: all 2s ease;
+}
+.nav__links > li:nth-child(5) a {
+  color: var(--buttonColor);
+}
+
+.nav__links a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.125rem;
+  text-underline-offset: 0.5rem;
+  text-decoration-color: var(--buttonColor);
+}
+.logo {
+  background-color: white;
+  border-radius: 50%;
+}
+.mobile__nav {
+  display: none;
+}
+.mobile__nav-close {
+  display: none;
+}
+.home__container {
+  display: grid;
+  justify-items: center;
+  gap: 3rem;
+  margin-block: var(--margin-block);
+}
+
+.north__container {
+  display: grid;
+  margin-block: var(--margin-block);
+  gap: 3rem;
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+  gap: 3rem;
+  align-items: center;
+}
+.grid__container:not(.grid__container.south) img {
+  width: 100%;
+  aspect-ratio: 1.25 / 1;
+  object-position: center;
+}
+
+.text {
+  display: grid;
+  gap: 2rem;
+}
+
+.isaan__container {
+  display: grid;
+  margin-block: var(--margin-block);
+  gap: 3rem;
+}
+.central {
+}
+
+.central__col {
+  display: grid;
+  justify-items: center;
+  margin-block: var(--margin-block);
+  gap: 3rem;
+}
+.box {
+  max-width: 650px;
+}
+.south__container {
+  margin-block: var(--margin-block);
+}
+
+.grid__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 5rem;
+  margin-bottom: var(--margin-block);
+}
+.grid__container img {
+  height: 100%;
+}
+
+.grid__container.south {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: var(--margin-block);
+}
+
+footer {
+  background-color: var(--bg-primary-color);
+  padding-block: 4rem;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 3rem;
+}
+.footer__text {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: white;
+  flex-wrap: wrap;
+}
+.footer__text p {
+  color: white;
+}
+.fa-brands {
+  font-size: 2rem;
+}
+.fa-brands:hover {
+  transform: scale(1.5);
+}
+.social__links {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid var(--bg-primary-color);
+  color: var(--bg-primary-color);
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 100vw;
+  font-size: 0.785rem;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: clamp(1.25rem, 1.5rem + 4vw, 3rem);
+}
+.btn:hover {
+  transform: scale(1.2);
+}
+
+.recipe__nav {
+  padding-block: 1.5rem;
+  background-color: var(--bg-primary-color);
+}
+.recipe__nav h1 {
+  color: white;
+  font-size: clamp(5rem, 2rem + 10vw, 7rem);
+}
+.recipe {
+  padding-block: 7rem;
+  line-height: 1.7;
+  border-bottom: 3px solid var(--bg-primary-color);
+}
+
+.recipe li {
+  font-size: clamp(0.75rem, 0.75rem + 4vw, 1.25rem);
+  margin-left: 2rem;
+}
+.recipe__container {
+  display: grid;
+  gap: 3rem;
+  padding-inline: 1rem;
+}
+
+.recipe__container img {
+  width: 700px;
+  aspect-ratio: 1.75 / 1;
+  margin-inline: auto;
+  box-shadow: 2px 2px 10px var(--bg-primary-color);
+}
+
+.ingredients {
+  margin-top: 1rem;
+  list-style: disc;
+}
+.instructions,
+.ingredients {
+  display: grid;
+  gap: 1.5rem;
+}
+figcaption {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--bg-primary-color);
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 900px) {
+  .grid__container.south {
+    grid-template-columns: 1fr;
+  }
+  .grid__container.south img {
+    aspect-ratio: 1 / 1;
+  }
+  .footer__container {
+    flex-direction: column;
+  }
+  .footer__text {
+    flex-direction: column;
+  }
+
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0 3rem;
+    gap: 1.75rem;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    transition: all 0.4s ease;
+    width: 100%;
+  }
+  .nav__links {
+    flex-direction: column;
+    text-align: center;
+  }
+  .mobile__nav {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 10px;
+    right: 20px;
+    font-size: 2.25rem;
+    color: var(--bg-primary-color);
+    cursor: pointer;
+  }
+  .mobile__nav-close {
+    position: absolute;
+    content: "";
+    top: 10px;
+    right: 20px;
+    color: #d4af37;
+    display: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
+
+  .navbar.active {
+    right: 0;
+    transition: 0.5s ease;
+  }
+  .mobile__nav.active {
+    display: none;
+  }
+
+  .mobile__nav-close.active {
+    display: block;
+  }
+  .recipe__container img {
+    width: 600px;
+    aspect-ratio: 1 / 1;
+  }
+}
