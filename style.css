@@ -336,6 +336,7 @@ figcaption {
   .navbar.active {
     right: 0;
     transition: 0.5s ease;
+    z-index:1;
   }
   .mobile__nav.active {
     display: none;
@@ -343,6 +344,7 @@ figcaption {
 
   .mobile__nav-close.active {
     display: block;
+        z-index: 2;
   }
   .recipe__container img {
     width: 600px;
