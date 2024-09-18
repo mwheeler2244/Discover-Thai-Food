@@ -125,6 +125,9 @@ main {
   gap: 3rem;
   margin-block: var(--margin-block);
 }
+.home__text p {
+  margin-top: 2rem;
+}
 
 .north__container {
   display: grid;
@@ -336,7 +339,7 @@ figcaption {
   .navbar.active {
     right: 0;
     transition: 0.5s ease;
-    z-index:1;
+    z-index: 1;
   }
   .mobile__nav.active {
     display: none;
@@ -344,13 +347,13 @@ figcaption {
 
   .mobile__nav-close.active {
     display: block;
-        z-index: 2;
+    z-index: 2;
   }
   .recipe__container img {
     width: 600px;
     aspect-ratio: 1 / 1;
   }
-    .grid__container img {
+  .grid__container img {
     min-width: 375px;
     height: 300px;
     margin-inline: auto;
