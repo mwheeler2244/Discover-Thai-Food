@@ -99,7 +99,7 @@ main {
   list-style: none;
   transition: all 2s ease;
 }
-.nav__links > li:nth-child(5) a {
+.nav__links > li:nth-child(6) a {
   color: var(--buttonColor);
 }
 
