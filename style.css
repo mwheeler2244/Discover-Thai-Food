@@ -284,6 +284,56 @@ figcaption {
   font-weight: 600;
   margin-top: 0.5rem;
 }
+.facebook-share {
+  background-color: #316ff6;
+}
+.twitter-share {
+  background-color: black;
+}
+.instagram-share {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+}
+.linkedin-share {
+  background-color: #316ff6;
+}
+.socials__share .fa-brands {
+  padding: 1rem;
+}
+.socials__share {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: fit-content;
+  font-size: 1.5rem;
+  color: white;
+  margin-left: var(--margin-400);
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  left: 0;
+}
+
+.socials__share a:hover {
+  scale: 1.1;
+}
+
+/*=============== SHARE ===============*/
+.footer__share {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.socials__share-footer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+.socials__share-footer .fa-brands {
+  padding: 0.5rem 3rem;
+}
+.socials__share-footer a:hover {
+  scale: 1.05;
+}
 
 @media (max-width: 900px) {
   .grid__container.south {
@@ -357,5 +407,8 @@ figcaption {
     min-width: 375px;
     height: 300px;
     margin-inline: auto;
+  }
+  .socials__share {
+    display: none;
   }
 }
