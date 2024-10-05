@@ -90,7 +90,7 @@ main {
   align-items: center;
   position: relative;
   background-color: var(--bg-primary-color);
-  padding: 2rem 6rem;
+  padding: 0.25rem 6rem;
 }
 
 .nav__links {
@@ -109,9 +109,9 @@ main {
   text-underline-offset: 0.5rem;
   text-decoration-color: var(--buttonColor);
 }
-.logo {
-  background-color: white;
-  border-radius: 50%;
+.logo img {
+  width: 75px;
+  height: 75px;
 }
 .mobile__nav {
   display: none;
